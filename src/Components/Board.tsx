@@ -27,7 +27,7 @@ const Title = styled.h2`
   text-align: center;
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 35px;
   color: #00b894;
 `;
 
@@ -45,7 +45,7 @@ const Area = styled.div<IAreaProps>`
       : "transparent"};
   flex-grow: 1;
   transition: background-color 0.3s ease-in-out;
-  padding: 20px;
+  padding: 30px;
 `;
 
 interface IBoardProps {
@@ -68,7 +68,7 @@ const Input = styled.input`
   text-align: center;
   background-color: #b2bec3;
   &::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: #fd79a8;
   }
   color: white;
   font-weight: 700;
@@ -77,10 +77,12 @@ const Input = styled.input`
 const Button = styled.button`
   position: absolute;
   right: 2px;
+  left: 2px;
+  buttom: 5px;
   background: none;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
 `;
 
@@ -131,7 +133,7 @@ const Board = ({ todos, boardId, idx }: IBoardProps) => {
             <Input
               {...register("todo", { required: true })}
               type="text"
-              placeholder={`Add task on ${boardId}`}
+              placeholder={`Add your task`}
             />
           </Form>
           <Droppable droppableId={boardId}>

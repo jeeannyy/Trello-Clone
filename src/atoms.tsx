@@ -15,7 +15,7 @@ const todoJSON = JSON.parse(localTodo as any);
 export const todoState = atom<ITodoState>({
   key: "todo",
   default: todoJSON || {
-    "TO DO": [],
+    "To Do": [],
     Doing: [],
     Done: [],
   },

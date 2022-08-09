@@ -14,7 +14,7 @@ const Wrapper = styled.div<IWrapper>`
   width: 300px;
   padding-top: 10px;
   background-color: ${(props) =>
-    props.isDragging ? "#fd79a8" : props.theme.boardColor};
+    props.isDragging ? "#dfe6e9" : props.theme.boardColor};
   border-radius: 5px;
   min-height: 300px;
   display: flex;
@@ -39,9 +39,9 @@ interface IAreaProps {
 const Area = styled.div<IAreaProps>`
   background-color: ${(props) =>
     props.isDraggingOver
-      ? "#dfe6e9"
-      : props.isDraggingFromThis
       ? "#b2bec3"
+      : props.isDraggingFromThis
+      ? "#636e72"
       : "transparent"};
   flex-grow: 1;
   transition: background-color 0.3s ease-in-out;
@@ -68,21 +68,20 @@ const Input = styled.input`
   text-align: center;
   background-color: #b2bec3;
   &::placeholder {
-    color: #fd79a8;
+    color: #2d3436;
   }
-  color: white;
+  color: #2d3436;
   font-weight: 700;
 `;
 
 const Button = styled.button`
   position: absolute;
   right: 2px;
-  left: 2px;
-  buttom: 5px;
+  buttom: 8px;
   background: none;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
 `;
 

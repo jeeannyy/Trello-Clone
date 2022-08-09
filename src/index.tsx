@@ -33,8 +33,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
-    background-color: ##b2bec3;
-    color: black;
+    background-color: #2d3436;
+    color: white;
     line-height: 1;
   }
   ol, ul {

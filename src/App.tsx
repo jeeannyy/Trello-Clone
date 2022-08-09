@@ -122,7 +122,7 @@ const App = () => {
           <Input
             {...register("board", { required: true })}
             type="text"
-            placeholder="Add Board!"
+            placeholder="Add a new board"
           />
         </Form>
         <Droppable droppableId="BOARDS" type={"Board"} direction={"horizontal"}>

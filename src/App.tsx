@@ -32,14 +32,15 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
+  margin-top: 100px
   background: none;
   outline: none;
-  border: none;
-  border-bottom: 1px solid white;
+  border: 1px solid white;
+  padding: 10px;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: black;
   }
 `;
 
@@ -122,7 +123,7 @@ const App = () => {
           <Input
             {...register("board", { required: true })}
             type="text"
-            placeholder="Add a new board"
+            placeholder="Make a new board"
           />
         </Form>
         <Droppable droppableId="BOARDS" type={"Board"} direction={"horizontal"}>
